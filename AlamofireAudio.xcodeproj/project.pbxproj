@@ -12,9 +12,12 @@
 		4A40CEC422DB3D6500471ECE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A40CEC222DB3D6500471ECE /* Main.storyboard */; };
 		4A40CEC622DB3D6A00471ECE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A40CEC522DB3D6A00471ECE /* Assets.xcassets */; };
 		4A40CEC922DB3D6A00471ECE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A40CEC722DB3D6A00471ECE /* LaunchScreen.storyboard */; };
+		A43F7D1B8A045C1BD214F5DE /* Pods_AlamofireAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D5DDE91AFFC5B2EFFF70911 /* Pods_AlamofireAudio.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		090DEF6852D5C0E3105BC977 /* Pods-AlamofireAudio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlamofireAudio.release.xcconfig"; path = "Target Support Files/Pods-AlamofireAudio/Pods-AlamofireAudio.release.xcconfig"; sourceTree = "<group>"; };
+		2D5DDE91AFFC5B2EFFF70911 /* Pods_AlamofireAudio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlamofireAudio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A40CEBB22DB3D6500471ECE /* AlamofireAudio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlamofireAudio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A40CEBE22DB3D6500471ECE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4A40CEC022DB3D6500471ECE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		4A40CEC522DB3D6A00471ECE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A40CEC822DB3D6A00471ECE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4A40CECA22DB3D6A00471ECE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E34BB82474F32ACA658D230E /* Pods-AlamofireAudio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlamofireAudio.debug.xcconfig"; path = "Target Support Files/Pods-AlamofireAudio/Pods-AlamofireAudio.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A43F7D1B8A045C1BD214F5DE /* Pods_AlamofireAudio.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0DEA63331C6F2DCCA1E92C9E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2D5DDE91AFFC5B2EFFF70911 /* Pods_AlamofireAudio.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4A40CEB222DB3D6500471ECE = {
 			isa = PBXGroup;
 			children = (
 				4A40CEBD22DB3D6500471ECE /* AlamofireAudio */,
 				4A40CEBC22DB3D6500471ECE /* Products */,
+				857A0D825471B510F088554A /* Pods */,
+				0DEA63331C6F2DCCA1E92C9E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +79,16 @@
 			path = AlamofireAudio;
 			sourceTree = "<group>";
 		};
+		857A0D825471B510F088554A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E34BB82474F32ACA658D230E /* Pods-AlamofireAudio.debug.xcconfig */,
+				090DEF6852D5C0E3105BC977 /* Pods-AlamofireAudio.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +96,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4A40CECD22DB3D6A00471ECE /* Build configuration list for PBXNativeTarget "AlamofireAudio" */;
 			buildPhases = (
+				ABA5BEF623C16E3004583E0A /* [CP] Check Pods Manifest.lock */,
 				4A40CEB722DB3D6500471ECE /* Sources */,
 				4A40CEB822DB3D6500471ECE /* Frameworks */,
 				4A40CEB922DB3D6500471ECE /* Resources */,
+				C3221195D8FC03DF4530C312 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		ABA5BEF623C16E3004583E0A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AlamofireAudio-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C3221195D8FC03DF4530C312 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AlamofireAudio/Pods-AlamofireAudio-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AlamofireAudio/Pods-AlamofireAudio-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AlamofireAudio/Pods-AlamofireAudio-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4A40CEB722DB3D6500471ECE /* Sources */ = {
@@ -280,6 +349,7 @@
 		};
 		4A40CECE22DB3D6A00471ECE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E34BB82474F32ACA658D230E /* Pods-AlamofireAudio.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +368,7 @@
 		};
 		4A40CECF22DB3D6A00471ECE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 090DEF6852D5C0E3105BC977 /* Pods-AlamofireAudio.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
