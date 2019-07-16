@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,6 +12,7 @@
 		4A40CEC422DB3D6500471ECE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A40CEC222DB3D6500471ECE /* Main.storyboard */; };
 		4A40CEC622DB3D6A00471ECE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A40CEC522DB3D6A00471ECE /* Assets.xcassets */; };
 		4A40CEC922DB3D6A00471ECE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A40CEC722DB3D6A00471ECE /* LaunchScreen.storyboard */; };
+		4A6158CA22DE31DA00079DC2 /* RadioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6158C922DE31DA00079DC2 /* RadioViewController.swift */; };
 		A43F7D1B8A045C1BD214F5DE /* Pods_AlamofireAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D5DDE91AFFC5B2EFFF70911 /* Pods_AlamofireAudio.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		4A40CEC522DB3D6A00471ECE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A40CEC822DB3D6A00471ECE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4A40CECA22DB3D6A00471ECE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A6158C922DE31DA00079DC2 /* RadioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioViewController.swift; sourceTree = "<group>"; };
 		E34BB82474F32ACA658D230E /* Pods-AlamofireAudio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlamofireAudio.debug.xcconfig"; path = "Target Support Files/Pods-AlamofireAudio/Pods-AlamofireAudio.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -71,6 +73,7 @@
 			children = (
 				4A40CEBE22DB3D6500471ECE /* AppDelegate.swift */,
 				4A40CEC022DB3D6500471ECE /* ViewController.swift */,
+				4A6158C922DE31DA00079DC2 /* RadioViewController.swift */,
 				4A40CEC222DB3D6500471ECE /* Main.storyboard */,
 				4A40CEC522DB3D6A00471ECE /* Assets.xcassets */,
 				4A40CEC722DB3D6A00471ECE /* LaunchScreen.storyboard */,
@@ -85,7 +88,6 @@
 				E34BB82474F32ACA658D230E /* Pods-AlamofireAudio.debug.xcconfig */,
 				090DEF6852D5C0E3105BC977 /* Pods-AlamofireAudio.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -206,6 +208,7 @@
 			files = (
 				4A40CEC122DB3D6500471ECE /* ViewController.swift in Sources */,
 				4A40CEBF22DB3D6500471ECE /* AppDelegate.swift in Sources */,
+				4A6158CA22DE31DA00079DC2 /* RadioViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
