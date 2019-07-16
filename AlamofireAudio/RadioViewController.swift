@@ -12,11 +12,13 @@ import AVKit
 
 class RadioViewController: UIViewController {
     
+    var player = AVPlayer()
+    
     let myButton: UIButton = {
         var button = UIButton()
         button.backgroundColor = .red
         button.frame = CGRect(x: 100, y: 100, width: 100, height: 100)
-        button.addTarget(self, action: #selector(createRadio), for: .touchUpInside)
+        button.addTarget(self, action: #selector(playerMethod), for: .touchUpInside)
         button.setTitle("Play", for: .normal)
         return button
     }()
@@ -40,5 +42,10 @@ class RadioViewController: UIViewController {
                 print(error.localizedDescription)
             }
         }
+    }
+    
+    @objc func playerMethod() {
+        player = AVPlayer(url: URL(string: "http://main.inf.fm:9103")!)
+        player.play()
     }
 }
